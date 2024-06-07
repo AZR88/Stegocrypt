@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StegoCrypt</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>StegoCrypt</h1>
+    <h2>Sembunyikan Pesan</h2>
+    <form id="hideForm" enctype="multipart/form-data">
+        <input type="file" name="image" required><br>
+        <input type="text" name="message" placeholder="Masukkan pesan" required><br>
+        <input type="text" name="key" placeholder="Masukkan kata kunci (opsional)"><br>
+        <button type="submit">Sembunyikan Pesan</button>
+    </form>
+    <br>
+    <h2>Ekstraksi Pesan</h2>
+    <form id="revealForm" enctype="multipart/form-data">
+        <input type="file" name="image" required><br>
+        <input type="text" name="key" placeholder="Masukkan kata kunci (jika ada)"><br>
+        <button type="submit">Ekstraksi Pesan</button>
+    </form>
+
+    
+</body>
+</html>
